@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
+    public Transform teleportTarget;
+    public GameObject fantasma;
 
-    [SerializeField]
-    List<GameObject> A1A2;
-    
-
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        
+        fantasma.transform.position = teleportTarget.transform.position;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }
