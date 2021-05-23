@@ -5,10 +5,15 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatCasa
+    second: {fileID: 2100000, guid: 4a6c1d5955840634a8ef3ee186854d8b, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ref_uv_nivel03_casa02_progesso03
-    second: {fileID: 2800000, guid: 90280e02e87bd4748b8475d70f2421a8, type: 3}
+    second: {fileID: 2800000, guid: 18510eaad27d8b64c8018168128f2103, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
