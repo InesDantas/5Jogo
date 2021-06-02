@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fantasma
+  - Both
+  - Horizontal
+  - Vertical
   layers:
   - Default
   - TransparentFX
