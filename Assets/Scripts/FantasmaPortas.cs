@@ -19,21 +19,20 @@ public class FantasmaPortas : MonoBehaviour
     {
         float translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
         transform.Translate(translate, 0, 0);
+
         float updown = Input.GetAxis("Vertical") * velocidade * Time.deltaTime;
         transform.Translate(0, 0, updown);
     }
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Horizontal"))
         {
-            float translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
-            transform.Translate(translate, 0, 0);
+     
         }
 
         if (other.gameObject.CompareTag("Vertical"))
         {
-            float updown = Input.GetAxis("Vertical") * velocidade * Time.deltaTime;
-            transform.Translate(0, 0, updown);
+
         }
     }
 }
