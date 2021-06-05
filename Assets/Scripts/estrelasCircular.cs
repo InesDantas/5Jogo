@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// prováveis asneiras feitas pela ana seguindo o tutorial https://www.youtube.com/watch?v=OwIE3GI8Rdg 
+
 public class estrelasCircular : MonoBehaviour
 {
    
