@@ -8,7 +8,8 @@ public class Pontes : MonoBehaviour
     [SerializeField] Material matPonte;
     [SerializeField] Light luz;
     [SerializeField] GameObject luzObjeto;
-    bool ponte;
+    bool activarPonte;
+    bool ponteActiva = false;
     float tempo;
     [SerializeField] float originalRange = 4f;
     [SerializeField] float duracao = 3f;
@@ -17,14 +18,14 @@ public class Pontes : MonoBehaviour
     float animacao = 1f;
     void Start()
     {
-      ponte = false;
+      activarPonte = false;
       luzObjeto.SetActive(false);
       luz.range = originalRange;
       matPonte.SetFloat("Vector1_54DC5DFC", 1);
     }
     void Update()
     {
-      if(ponte == true)
+      if(activarPonte == true && ponteActiva == false)
       {
         tempo += Time.deltaTime;
         animacao = Mathf.MoveTowards(animacao, 0, (1 / velocidade) * Time.deltaTime);
@@ -35,12 +36,18 @@ public class Pontes : MonoBehaviour
           var amplitude = Mathf.PingPong(Time.time, duracao);
           amplitude = amplitude / duracao * 1f + 1f;
           luz.range = originalRange * amplitude;
+          ponteActiva = true;
         }
       }
-      
     }
-    public void OnTriggerEnter()
+
+    public bool IsActive()
     {
-     ponte = true;
+      return ponteActiva;
+    }
+
+    public void Activar() 
+    {
+      if(!activarPonte) activarPonte = true;
     }
 }

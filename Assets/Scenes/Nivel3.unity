@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1073,6 +1073,7 @@ GameObject:
   - component: {fileID: 182759652}
   - component: {fileID: 182759651}
   - component: {fileID: 182759650}
+  - component: {fileID: 182759654}
   m_Layer: 0
   m_Name: PonteVerde
   m_TagString: Ponte
@@ -1156,6 +1157,25 @@ Transform:
   m_Father: {fileID: 778937072}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &182759654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182759649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632801a4ea661e5478e2776b0c969e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matPonte: {fileID: 0}
+  luz: {fileID: 0}
+  luzObjeto: {fileID: 0}
+  originalRange: 4
+  duracao: 3
+  luzAparece: 1.3
+  velocidade: 1
 --- !u!1 &195396791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,7 +3951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1069972155
 Transform:
   m_ObjectHideFlags: 0
@@ -4047,7 +4067,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077196934}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -5736,7 +5756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479231573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 632801a4ea661e5478e2776b0c969e0e, type: 3}
   m_Name: 
@@ -8636,6 +8656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luzAzul: {fileID: 847020010}
   intensidadeMax: 6
+  pontes: []
 --- !u!1 &1939643129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8780,7 +8801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1974084451
 Transform:
   m_ObjectHideFlags: 0
@@ -8789,7 +8810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974084450}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.83, y: -0, z: 0.71}
   m_LocalScale: {x: 0.001, y: 0.001, z: 1}
   m_Children: []
   m_Father: {fileID: 1077196937}
@@ -8854,7 +8875,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: acb487e252cb5e74fbe6be7ae6394074, type: 3}
-  m_Color: {r: 0.3123138, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

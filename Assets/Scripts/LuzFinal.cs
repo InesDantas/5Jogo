@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class LuzFinal : MonoBehaviour
 {
-    [SerializeField]
-    Light luzAzul;
-    [SerializeField]
-    float intensidadeMax = 6f;
+    [SerializeField]Light luzAzul;
+    [SerializeField]float intensidadeMax = 6f;
+
+    [SerializeField] Pontes[] pontes;
+
     void Start()
     {
         luzAzul.intensity = 0;
@@ -16,7 +17,24 @@ public class LuzFinal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           var amplitude2 = Mathf.PingPong(Time.time, intensidadeMax);
-      luzAzul.intensity = amplitude2;
+        if(AreAllActive() == true)
+        {
+            
+        }
+        //var amplitude2 = Mathf.PingPong(Time.time, intensidadeMax);
+        //luzAzul.intensity = amplitude2;
+
+    }
+
+    bool AreAllActive()
+    {
+        for(int i = 0; i < pontes.Length; i++) 
+        {
+            if(!pontes[i].IsActive()) 
+            {
+                return false;
+            }       
+        }
+        return true;
     }
 }
