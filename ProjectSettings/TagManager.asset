@@ -8,6 +8,7 @@ TagManager:
   - Both
   - Horizontal
   - Vertical
+  - Ponte
   layers:
   - Default
   - TransparentFX
