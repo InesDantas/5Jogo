@@ -6,24 +6,28 @@ public class LuzFinal : MonoBehaviour
 {
     [SerializeField]Light luzAzul;
     [SerializeField]float intensidadeMax = 6f;
-
+    [SerializeField]GameObject luz;
+    bool luzAtiva;
     [SerializeField] Pontes[] pontes;
-
+    [SerializeField]Animator porta = null;
     void Start()
     {
+        luzAtiva = false;
         luzAzul.intensity = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log(AreAllActive());
         if(AreAllActive() == true)
         {
-            
+            luzAtiva=true;
+            luz.SetActive(luzAtiva);
+            var amplitude2 = Mathf.PingPong(Time.time, intensidadeMax);
+            luzAzul.intensity = amplitude2;
+            porta.Play("PortaAbrir", 0, 0.0f);
+            gameObject.SetActive(false);
         }
-        //var amplitude2 = Mathf.PingPong(Time.time, intensidadeMax);
-        //luzAzul.intensity = amplitude2;
-
     }
 
     bool AreAllActive()
