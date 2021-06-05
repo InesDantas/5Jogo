@@ -7,7 +7,6 @@ public class SomPortaAbrindo : MonoBehaviour
     public AudioClip SoundToPlay;
     public float Volume;
     AudioSource audio;
-    public bool alreadyPlayed = false;
     void Start()
     {
         audio = GetComponent<AudioSource>();
@@ -16,10 +15,6 @@ public class SomPortaAbrindo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!alreadyPlayed)
-        {
-            audio.PlayOneShot(SoundToPlay, Volume);
-            alreadyPlayed = true;
-        }
+        
     }
 }
