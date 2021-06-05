@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class TriggerB1 : MonoBehaviour
 {
-    public AudioClip SoundToPlay;
-    public float Volume;
-    AudioSource audio;
-
     [SerializeField]
     private Animator porta = null;
 
@@ -16,7 +12,6 @@ public class TriggerB1 : MonoBehaviour
     {
         if (other.CompareTag("Fantasma"))
         {
-            audio = GetComponent<AudioSource>();
             porta.Play("PortaAbrir1", 0, 0.0f);
             gameObject.SetActive(false);
         }
