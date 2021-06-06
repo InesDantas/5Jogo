@@ -31,7 +31,7 @@ public class FantasmaPortas : MonoBehaviour
     private bool CanGoUp()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.position, -transform.up, out hit, 1f))
+        if(Physics.Raycast(transform.position, -transform.up, out hit, 2f))
         {
             if(hit.collider.gameObject.tag == "Ponte")
             {
@@ -42,4 +42,11 @@ public class FantasmaPortas : MonoBehaviour
         return true;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Rotate"))
+        {
+            transform.Rotate(180, 0, 0);
+        }
+    }
 }
