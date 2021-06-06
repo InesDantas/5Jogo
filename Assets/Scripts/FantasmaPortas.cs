@@ -44,9 +44,20 @@ public class FantasmaPortas : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Rotate"))
+        if(other.CompareTag("RotateDown"))
         {
-            transform.Rotate(180, 0, 0);
+            //transform.Rotate(180, 0, 0);
+            transform.rotation = Quaternion.Euler(90, 270, -90);
+        }
+
+        if (other.CompareTag("RotateUp"))
+        {
+            transform.rotation = Quaternion.Euler(-90, 270, -90);
+        }
+
+        if (other.CompareTag("RotateSide"))
+        {
+            transform.rotation = Quaternion.Euler(0, 270, -90);
         }
     }
 }

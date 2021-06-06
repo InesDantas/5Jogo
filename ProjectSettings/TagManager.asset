@@ -9,7 +9,9 @@ TagManager:
   - Horizontal
   - Vertical
   - Ponte
-  - Rotate
+  - RotateUp
+  - RotateDown
+  - RotateSide
   layers:
   - Default
   - TransparentFX
