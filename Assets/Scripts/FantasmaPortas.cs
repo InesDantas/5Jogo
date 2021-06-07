@@ -9,13 +9,14 @@ public class FantasmaPortas : MonoBehaviour
 
     private Rigidbody fantasma;
 
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         fantasma = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    public void Update()
     {
         float translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
         transform.Translate(translate, 0, 0);
