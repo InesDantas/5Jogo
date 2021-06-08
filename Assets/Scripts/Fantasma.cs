@@ -17,8 +17,14 @@ public class Fantasma : MonoBehaviour
 
     public float translate;
 
+    Vector3 fantasmaPosicaoOriginal;
+
+    Quaternion fantasmaOrientacaoOriginal;
+
     void Start()
     {
+        fantasmaPosicaoOriginal = transform.position;
+        fantasmaOrientacaoOriginal = transform.rotation;
         fantasma = GetComponent<Rigidbody>();
     }
 
@@ -35,11 +41,19 @@ public class Fantasma : MonoBehaviour
         }
     }
 
-    void Rodar()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetAxis("Horizontal") < 0)
+        if (other.CompareTag("Coletavel"))
         {
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            other.gameObject.SetActive(false);
+            GameObject.Find("Gameplay").GetComponent<Gameplay>().Pontuacao();
+        }
+
+        if (other.CompareTag("Respawn"))
+        {
+            transform.position = fantasmaPosicaoOriginal;
+            transform.rotation = fantasmaOrientacaoOriginal;
         }
     }
+
 }

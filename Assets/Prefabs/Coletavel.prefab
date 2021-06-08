@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 707833720104990371}
   - component: {fileID: 4502861382100302086}
   - component: {fileID: 1844672476537769420}
-  - component: {fileID: 1033578835433743500}
   - component: {fileID: 1033578835433743503}
+  - component: {fileID: -1478813185208828620}
   m_Layer: 0
   m_Name: Coletavel
-  m_TagString: Untagged
+  m_TagString: Coletavel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ce5086fb39b1a439c8f73e7b193a19, type: 3}
+  - {fileID: 2100000, guid: 30698935f5bbf404787a8ef61dc53d44, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1033578835433743500
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187299229823593497}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: -1
-  m_Mesh: {fileID: -5907437012147361032, guid: c5ce5086fb39b1a439c8f73e7b193a19, type: 3}
 --- !u!114 &1033578835433743503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,3 +93,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7129659f0d28404e92f3477173117f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-1478813185208828620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187299229823593497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01809017, y: 0.0052509937, z: 0.019021131}
+  m_Center: {x: 0.0009549153, y: 0, z: 0}
