@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2204,18 +2204,18 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8642616, g: 0, b: 1, a: 0}
-        key1: {r: 0.32423306, g: 0, b: 1, a: 1}
-        key2: {r: 0.0728854, g: 0, b: 0.29411766, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 0.05339978, g: 0.754717, b: 0.059364054, a: 0}
+        key1: {r: 0.0043568173, g: 0.38679248, b: 0, a: 1}
+        key2: {r: 0.017799927, g: 0.754717, b: 0.048421934, a: 0}
+        key3: {r: 0.0728854, g: 0, b: 0.29411766, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 12914
-        ctime1: 25636
+        ctime1: 26600
         ctime2: 37008
-        ctime3: 0
+        ctime3: 37008
         ctime4: 0
         ctime5: 0
         ctime6: 0
@@ -5805,7 +5805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &291445134
 Transform:
   m_ObjectHideFlags: 0
@@ -8512,9 +8512,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8642616, g: 0, b: 1, a: 0}
-        key1: {r: 0.32423306, g: 0, b: 1, a: 1}
-        key2: {r: 0.0728854, g: 0, b: 0.29411766, a: 0}
+        key0: {r: 0, g: 0.6981132, b: 0.0062346277, a: 0}
+        key1: {r: 0.04735117, g: 0.3018868, b: 0.024207907, a: 1}
+        key2: {r: 0.15897804, g: 0.6981132, b: 0.036222856, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -17869,17 +17869,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801774551}
-  m_LocalRotation: {x: -0, y: -0, z: 0.5, w: 0.8660254}
-  m_LocalPosition: {x: 0.01812749, y: 1.0319977, z: -0.009446676}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0.35194895, y: -0.61329603, z: 0.35194898, w: 0.613296}
+  m_LocalPosition: {x: 2.8599973, y: 1.212637, z: -0.28340483}
+  m_LocalScale: {x: 0.49999985, y: 0.4999999, z: 0.49999988}
   m_Children:
   - {fileID: 554828644}
   - {fileID: 1001172608}
   - {fileID: 211782132}
   - {fileID: 795950165}
   - {fileID: 1635365491}
-  m_Father: {fileID: 965790723935639380}
-  m_RootOrder: 0
+  m_Father: {fileID: 1935311769}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &801774553
 MonoBehaviour:
@@ -24388,9 +24388,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8642616, g: 0, b: 1, a: 0}
-        key1: {r: 0.32423306, g: 0, b: 1, a: 1}
-        key2: {r: 0.0728854, g: 0, b: 0.29411766, a: 0}
+        key0: {r: 0.09212668, g: 0.6981132, b: 0.049394794, a: 0}
+        key1: {r: 0.030997982, g: 0.3962264, b: 0, a: 1}
+        key2: {r: 0.10071614, g: 0.6886792, b: 0.009745443, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -27791,7 +27791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1003504704
 Transform:
   m_ObjectHideFlags: 0
@@ -34213,8 +34213,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
   m_LocalPosition: {x: 16.58, y: -3.89, z: 0.09446675}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_Children:
-  - {fileID: 801774552}
+  m_Children: []
   m_Father: {fileID: 2059417928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60}
