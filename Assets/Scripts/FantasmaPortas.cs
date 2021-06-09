@@ -9,6 +9,7 @@ public class FantasmaPortas : MonoBehaviour
 
     private Rigidbody fantasma;
 
+    public float translate;
 
     // Start is called before the first frame update
     public void Start()
@@ -18,7 +19,7 @@ public class FantasmaPortas : MonoBehaviour
 
     public void Update()
     {
-        float translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
+        translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
         transform.Translate(translate, 0, 0);
 
         if(CanGoUp())

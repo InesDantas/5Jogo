@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TriggerC1 : MonoBehaviour
 {
-
     [SerializeField]
     private Animator porta = null;
 
