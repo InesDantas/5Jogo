@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LuzFinal : MonoBehaviour
 {
+    [SerializeField]GameObject Trigger;
     [SerializeField]Light luzAzul;
     [SerializeField]float intensidadeMax = 6f;
     [SerializeField]GameObject luz;
@@ -27,6 +28,7 @@ public class LuzFinal : MonoBehaviour
             luzAzul.intensity = amplitude2;
             porta.Play("PortaAbrir", 0, 0.0f);
             gameObject.SetActive(false);
+            Trigger.SetActive(true);
         }
     }
 
