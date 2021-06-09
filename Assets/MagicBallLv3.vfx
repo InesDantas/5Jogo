@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: MagicBall
+  m_Name: MagicBallLv3
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
   m_Children:
@@ -62,7 +62,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MagicBall
+  m_Name: MagicBallLv3
   m_Graph: {fileID: 114350483966674976}
   m_ShaderSources:
   - compute: 1
@@ -306,7 +306,7 @@ VisualEffectResource:
       = index;\n#endif\n#endif\n\t}\n}\n"
   - compute: 0
     name: '[System 1]Output Particle Quad'
-    source: "Shader \"Hidden/VFX/MagicBall/System 1/Output Particle Quad\"\n{\n\tSubShader\n\t{\t\n\t\tCull
+    source: "Shader \"Hidden/VFX/MagicBallLv3/System 1/Output Particle Quad\"\n{\n\tSubShader\n\t{\t\n\t\tCull
       Off\n\t\t\n\t\tTags { \"Queue\"=\"Transparent\" \"IgnoreProjector\"=\"True\"
       \"RenderType\"=\"Transparent\" }\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tBlend
       SrcAlpha One\n\t\tZTest LEqual\n\t\tZWrite Off\n\t\tCull Off\n\t\t\n\t\n\t\t\t\n\t\tHLSLINCLUDE\n\t\t\n\t\t#define
@@ -1547,11 +1547,11 @@ VisualEffectResource:
         - m_ExpressionIndex: 63
           m_Value: 6.2831855
         - m_ExpressionIndex: 67
-          m_Value: 1
+          m_Value: 0
         - m_ExpressionIndex: 68
           m_Value: 500000
         - m_ExpressionIndex: 69
-          m_Value: 0
+          m_Value: 3.8156037
         - m_ExpressionIndex: 70
           m_Value: 0
         - m_ExpressionIndex: 71
@@ -1559,7 +1559,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 72
           m_Value: 0
         - m_ExpressionIndex: 73
-          m_Value: 0.0528183
+          m_Value: 5.656854
         - m_ExpressionIndex: 74
           m_Value: 2
         - m_ExpressionIndex: 75
@@ -1599,7 +1599,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 96
           m_Value: 50
         - m_ExpressionIndex: 97
-          m_Value: 0.01
+          m_Value: 0.006
         - m_ExpressionIndex: 101
           m_Value: 1
         - m_ExpressionIndex: 103
@@ -3238,7 +3238,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.01
+      m_SerializableObject: 0.006
     m_Space: 2147483647
   m_Property:
     name: Size
@@ -6791,7 +6791,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.05281829833984375,"y":0.0,"z":1.0}'
+      m_SerializableObject: '{"x":5.656854152679443,"y":3.815603733062744,"z":0.0}'
     m_Space: 2147483647
   m_Property:
     name: Color
