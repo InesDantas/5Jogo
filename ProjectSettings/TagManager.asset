@@ -13,6 +13,7 @@ TagManager:
   - RotateDown
   - RotateSide
   - Coletavel
+  - TopView
   layers:
   - Default
   - TransparentFX

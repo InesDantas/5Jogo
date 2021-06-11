@@ -38,4 +38,12 @@ public class AnimacaoFantasmaPortas : MonoBehaviour
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (GameObject.Find("FantasminhaPortas").CompareTag("TopView"))
+        {
+            animator.SetBool("back", true);
+        }
+    }
 }
