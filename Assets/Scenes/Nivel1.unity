@@ -6715,7 +6715,7 @@ PrefabInstance:
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.409813
+      value: 36.4
       objectReference: {fileID: 0}
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
@@ -18080,17 +18080,17 @@ PrefabInstance:
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7717304
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.181572
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.409813
+      value: 36.4
       objectReference: {fileID: 0}
     - target: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
         type: 3}
@@ -18900,7 +18900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1342753585}
   transitionTime: 1
-  coletavelOriginal: {fileID: 1886901065}
+  coletavelOriginal: {fileID: 0}
   textoPontos: {fileID: 1041867445}
 --- !u!4 &1037081867
 Transform:
@@ -26781,12 +26781,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872583453}
   m_Mesh: {fileID: -4117517784974819681, guid: aa223d58ea5aa104b86630dfd27a96c8, type: 3}
---- !u!1 &1886901065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 187299229823593497, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 929761492}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1886901070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 707833720104990371, guid: bbca24bd6d54aa94e8b1a3ad62b225f2,

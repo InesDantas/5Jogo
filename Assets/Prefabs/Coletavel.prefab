@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 707833720104990371}
   - component: {fileID: 4502861382100302086}
   - component: {fileID: 1844672476537769420}
-  - component: {fileID: 1033578835433743503}
   - component: {fileID: 571294641413102300}
   - component: {fileID: -1478813185208828620}
+  - component: {fileID: 4146153906582887399}
   m_Layer: 0
   m_Name: Coletavel
   m_TagString: Coletavel
@@ -82,18 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1033578835433743503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187299229823593497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7129659f0d28404e92f3477173117f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &571294641413102300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a9c30b882b80354cb7f879d1155a922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playSound: {fileID: 0}
+  playSound: {fileID: 6747201523418501440, guid: 50adcb24f70eb1142bc8071c06902700,
+    type: 3}
 --- !u!65 &-1478813185208828620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,3 +109,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01809017, y: 0.0052509937, z: 0.019021131}
   m_Center: {x: 0.0009549153, y: 0, z: 0}
+--- !u!114 &4146153906582887399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187299229823593497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1358b9f50d4be4c97430eb0f1c2d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
