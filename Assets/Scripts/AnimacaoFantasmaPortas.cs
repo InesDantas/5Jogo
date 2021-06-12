@@ -8,12 +8,13 @@ public class AnimacaoFantasmaPortas : MonoBehaviour
 
     bool facingRight = true;
 
+    double fantasmaGameObjectPosition;
+
     void Start()
     {
-        
+        fantasmaGameObjectPosition = GameObject.Find("FantasminhaPortas").transform.position.z;
     }
 
-    // Update is called once per frame
     void Update()
     {
         GameObject fantasminhaPortas = GameObject.Find("FantasminhaPortas");
@@ -39,11 +40,14 @@ public class AnimacaoFantasmaPortas : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Switch ()
     {
-        if (GameObject.Find("FantasminhaPortas").CompareTag("TopView"))
+        if(fantasmaGameObjectPosition <= -4)
         {
-            animator.SetBool("back", true);
+            animator.SetBool("top", true);
+        } else
+        {
+            animator.SetBool("top", false);
         }
     }
 }

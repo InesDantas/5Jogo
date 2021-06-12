@@ -50,16 +50,33 @@ public class FantasmaPortas : MonoBehaviour
         {
             //transform.Rotate(180, 0, 0);
             transform.rotation = Quaternion.Euler(90, 270, -90);
+            //SwitchContrario();
         }
 
         if (other.CompareTag("RotateUp"))
         {
             transform.rotation = Quaternion.Euler(-90, 270, -90);
+            //Switch();
         }
 
         if (other.CompareTag("RotateSide"))
         {
             transform.rotation = Quaternion.Euler(0, 270, -90);
+            //SwitchContrario();
         }
     }
+
+    /*void Switch()
+    {
+        GameObject walkcycle = GameObject.Find("Walkcycle");
+        AnimacaoFantasmaPortas animacaoFantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
+        animacaoFantasmaPortas.animator.SetBool("top", true);
+    }
+
+    void SwitchContrario()
+    {
+        GameObject walkcycle = GameObject.Find("Walkcycle");
+        AnimacaoFantasmaPortas animacaoFantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
+        animacaoFantasmaPortas.animator.SetBool("top", false);
+    }*/
 }
