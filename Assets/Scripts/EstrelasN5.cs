@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Aspirador : MonoBehaviour
+public class EstrelasN5 : MonoBehaviour
 {
-
-    NavMeshAgent aspirador;
+    NavMeshAgent estrela;
     Transform alvo;
 
-    // Start is called before the first frame update
     void Start()
     {
-        aspirador = GetComponent<NavMeshAgent>();
+        estrela = GetComponent<NavMeshAgent>();
         alvo = GameObject.FindGameObjectWithTag("Fantasma").transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        aspirador.destination = alvo.position;
+        estrela.destination = alvo.position;
     }
 }
