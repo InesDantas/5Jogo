@@ -8,11 +8,9 @@ public class AnimacaoFantasmaPortas : MonoBehaviour
 
     bool facingRight = true;
 
-    double fantasmaGameObjectPosition;
-
     void Start()
     {
-        fantasmaGameObjectPosition = GameObject.Find("FantasminhaPortas").transform.position.z;
+        
     }
 
     void Update()
@@ -38,16 +36,5 @@ public class AnimacaoFantasmaPortas : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
-    }
-
-    public void Switch ()
-    {
-        if(fantasmaGameObjectPosition <= -4)
-        {
-            animator.SetBool("top", true);
-        } else
-        {
-            animator.SetBool("top", false);
-        }
     }
 }

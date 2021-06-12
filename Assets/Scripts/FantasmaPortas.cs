@@ -11,6 +11,8 @@ public class FantasmaPortas : MonoBehaviour
 
     public float translate;
 
+    public bool cima = true;
+
     // Start is called before the first frame update
     public void Start()
     {
@@ -26,7 +28,6 @@ public class FantasmaPortas : MonoBehaviour
         {
             float updown = Input.GetAxis("Vertical") * velocidade * Time.deltaTime;
             transform.Translate(0, 0, updown);
-
         }
     }
 
@@ -37,7 +38,20 @@ public class FantasmaPortas : MonoBehaviour
         {
             if(hit.collider.gameObject.tag == "Ponte")
             {
+                cima = false;
+                GameObject walkcycle = GameObject.Find("Walkcycle");
+                AnimacaoFantasmaPortas animacaofantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
+                animacaofantasmaPortas.animator.SetBool("Top", false);
+
                 return false;
+            }
+
+            if (hit.collider.gameObject.tag == "TopView")
+            {
+                cima = true;
+                GameObject walkcycle = GameObject.Find("Walkcycle");
+                AnimacaoFantasmaPortas animacaofantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
+                animacaofantasmaPortas.animator.SetBool("Top", true);
             }
         }
 
@@ -48,35 +62,17 @@ public class FantasmaPortas : MonoBehaviour
     {
         if(other.CompareTag("RotateDown"))
         {
-            //transform.Rotate(180, 0, 0);
             transform.rotation = Quaternion.Euler(90, 270, -90);
-            //SwitchContrario();
         }
 
         if (other.CompareTag("RotateUp"))
         {
             transform.rotation = Quaternion.Euler(-90, 270, -90);
-            //Switch();
         }
 
         if (other.CompareTag("RotateSide"))
         {
             transform.rotation = Quaternion.Euler(0, 270, -90);
-            //SwitchContrario();
         }
     }
-
-    /*void Switch()
-    {
-        GameObject walkcycle = GameObject.Find("Walkcycle");
-        AnimacaoFantasmaPortas animacaoFantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
-        animacaoFantasmaPortas.animator.SetBool("top", true);
-    }
-
-    void SwitchContrario()
-    {
-        GameObject walkcycle = GameObject.Find("Walkcycle");
-        AnimacaoFantasmaPortas animacaoFantasmaPortas = walkcycle.GetComponent<AnimacaoFantasmaPortas>();
-        animacaoFantasmaPortas.animator.SetBool("top", false);
-    }*/
 }
