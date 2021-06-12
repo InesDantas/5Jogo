@@ -10,9 +10,6 @@ public class Fantasma : MonoBehaviour
     private Rigidbody fantasma;
 
     [SerializeField]
-    bool fantasmaSaltou = false;
-
-    [SerializeField]
     float salto = 5;
 
     public float translate;
@@ -33,11 +30,9 @@ public class Fantasma : MonoBehaviour
         translate = Input.GetAxis("Horizontal") * velocidade * Time.deltaTime;
         transform.Translate(0, 0, translate);
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(fantasma.velocity.y) < 0.005f)
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(fantasma.velocity.y) < 0.001f)
         {
-            fantasma.AddForce(new Vector3(0, salto, 0), ForceMode.Impulse);
-
-            fantasmaSaltou = true;
+           fantasma.AddForce(new Vector3(0, salto, 0), ForceMode.Impulse);
         }
     }
 
